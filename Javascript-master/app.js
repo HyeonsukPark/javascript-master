@@ -148,7 +148,7 @@ function displayFact() {
 
 // hide the form
 function formHidden() {
-	dinoForm.style.visibility = "hidden";
+	dinoForm.style.display = 'none';
 }
 
 // show the grid
