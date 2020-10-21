@@ -75,7 +75,7 @@ function displayData() {
 			grid.innerHTML += `
         <div class="grid-item">
         <h3 class="title">${dinoArray[8]}</h3>
-        <img class="Image" src="images/${dinoArray[8]}.png">
+        <img class="Image" src="images/${dinoArray[8]}.toLowerCase().png">
         <p>All birds are living dinosaurs.</p>
         </div>
         `;
@@ -83,7 +83,7 @@ function displayData() {
 			grid.innerHTML += `
         <div class="grid-item">
         <h3 class="title">${dinoArray[i]}</h3>
-        <img class="Image" src="images/${dinoArray[i]}.png">
+        <img class="Image" src="images/${dinoArray[i]}.toLowerCase().png">
         <p class="randomFact${dinoArray[i].replaceAll(" ", "")}"></p>
         </div>
         `;
