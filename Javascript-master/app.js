@@ -69,7 +69,7 @@ function displayData() {
       <div class="grid-item">
       <h3 class="title">${dinoArray[4]}</h3>
       <img class="Image" src="images/human.png">
-      <p class="randomFact${dinoArray[4].replaceAll(" ", "")}s"></p>
+      <p class="randomFact${dinoArray[4].replaceAll(" ", "")}"></p>
       </div>
         `;
 		} else if(i == 8) {
