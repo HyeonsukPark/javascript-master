@@ -100,11 +100,11 @@ function displayFact() {
 			// Generate method function
 			const functionFactory = {
 				compareWeight() {
-						let weight = dinosarus.species + ' is ' + dinosarus.weight + ' ibs. ' + humanArray.name + ' is ' + humanArray.weight + ' ibs.';
+						let weight = dinosarus.species + ' is ' + (dinosarus.weight - humanArray.weight) + ' ibs heavier than ' + humanArray.name;
 						return weight;
 					},
 					compareHeight() {
-						let height = dinosarus.species + ' is ' + dinosarus.height + ' inches. ' + humanArray.name + ' is ' + humanArray.height + ' inches.';
+						let height = dinosarus.species + ' is ' + (dinosarus.height - humanArray.height) + ' inches taller than ' + humanArray.name;
 						return height;
 					},
 					compareDiet() {
