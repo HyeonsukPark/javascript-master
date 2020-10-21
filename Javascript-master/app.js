@@ -61,14 +61,13 @@ function newFactory() {
 
 // Create tiles and push the tiles to the grid 
 function displayData() {
-	//Do a cycle from 1 to 9 and then for each number you assign that position to a random dino. If the number is 5 then you choose human
 	const grid = document.querySelector("#grid");
 	for(i = 0; i < 9; i++) {
 		if(i == 4) {
 			grid.innerHTML += `
       <div class="grid-item">
       <h3 class="title">${dinoArray[4]}</h3>
-      <img class="Image" src="javascript-master/images/human.png">
+      <img class="Image" src="images/human.png">
       <p class="randomFact${dinoArray[4].replaceAll(" ", "")}"></p>
       </div>
         `;
@@ -76,7 +75,7 @@ function displayData() {
 			grid.innerHTML += `
         <div class="grid-item">
         <h3 class="title">${dinoArray[8]}</h3>
-        <img class="Image" src="javascript-master/images/${dinoArray[8]}.png">
+        <img class="Image" src="images/${dinoArray[8]}.png">
         <p>All birds are living dinosaurs.</p>
         </div>
         `;
@@ -84,7 +83,7 @@ function displayData() {
 			grid.innerHTML += `
         <div class="grid-item">
         <h3 class="title">${dinoArray[i]}</h3>
-        <img class="Image" src="javascript-master/images/${dinoArray[i]}.png">
+        <img class="Image" src="images/${dinoArray[i]}.png">
         <p class="randomFact${dinoArray[i].replaceAll(" ", "")}"></p>
         </div>
         `;
