@@ -2,9 +2,9 @@
 
 ## How to start the page
 
-1. First of all, the users should put their name, height, weight and diet. 
-2. As soon as they click the button 'compare Me', A grid appears. The grid has 9 tiles which have a variety of dinosours. The grid shows names, pictures and explanations about 
-dinosours. Also, the users can compare their information with dinosour's one. There are random facts about dinosours. 
+1. First, the user should put their name, height, weight and diet. 
+2. Click the button 'compare Me'. As soon as the user clicks the button, A grid will appear. The grid has 9 tiles with various dinosaurs. The grid shows the names, pictures and description for dinosaurs.
+3. The user can compare their information with dinosour's information. Each tile has random descriptions: info about dinosaur, compared info between the user and the dinosaur.
 
 ### Project logic 
 
@@ -13,5 +13,7 @@ dinosours. Also, the users can compare their information with dinosour's one. Th
 I don't have much experiences with fetch API so I trid to use fetch API. 
 3. Another difficult part was to display the data on the grid. I tried several methods and ended up facing endless error messages. 
 ...
+
+(In progress)
 
 
