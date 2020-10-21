@@ -12,8 +12,7 @@
 2. Using 'dino.json' file as an object file was a bit tricky, so I did 'googling' to find ideas. I managed to get ideas such as 'json.parse()...fetch' etc. 
 I don't have much experiences with fetch API so I trid to use fetch API. 
 3. Another difficult part was to display the data on the grid. I tried several methods and ended up facing endless error messages. 
-.
-.
+
 
 (In progress)
 
