@@ -18,6 +18,6 @@ I don't have much experiences with fetch API so I trid to use fetch API.
 3. Another difficult part was to display the data on the grid. I tried several methods and ended up facing endless error messages. 
 
 
-(In progress)
+(Edit in progress)
 
 
