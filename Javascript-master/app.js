@@ -33,7 +33,7 @@ class Humans {
 		this.inches = document.getElementById('inches').value;
 		this.height = (this.feet * 12) + this.inches;
 		this.weight = document.getElementById('weight').value;
-		this.diet = document.getElementById('diet').value;
+		this.diet = document.getElementById('diet').value.toLowerCase();
 		return this;
 	}
 }
