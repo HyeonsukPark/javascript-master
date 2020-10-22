@@ -16,12 +16,12 @@ class Dinos {
 
 // Create dino Object
 // Using fatch to call dino.json
-let dinosarus = [];
+let dinosaurs = [];
 const getDinos = fetch("dino.json").then(function(resp) {
 	return resp.json();
 }).then(function(data) {
-	dinosarus = data.Dinos.map((dino) => new Dinos(dino));
-	console.log(dinosarus);
+	dinosaurs = data.Dinos.map((dino) => new Dinos(dino));
+	console.log(dinosaurs);
 });
 
 // Human constructor 
@@ -51,8 +51,8 @@ function humanData() {
 let dinoArray = [];
 
 function newFactory() {
-	dinosarus.forEach((dinosarus) => {
-		dinoArray.push(dinosarus.species);
+	dinosaurs.forEach((dinosarus) => {
+		dinoArray.push(dinosaurs.species);
 	});
 	let humanName = humanArray.name;
 	dinoArray.splice(4, 0, humanName);
@@ -93,30 +93,55 @@ function displayData() {
 
 // Create random facts and methods
 function displayFact() {
-	dinosarus.forEach((dinosarus) => {
-		let randomFact = document.querySelector(".randomFact" + dinosarus.species.replaceAll(" ", ""));
+	dinosaurs.forEach((dinosarus) => {
+		let randomFact = document.querySelector(".randomFact" + dinosaurs.species.replaceAll(" ", ""));
 		if(randomFact !== null) {
 			
 			// Generate method function
 			const functionFactory = {
 				compareWeight() {
-						let weight = dinosarus.species + ' is ' + (dinosarus.weight - humanArray.weight) + ' ibs heavier than ' + humanArray.name;
+				        if (dinosaurs.weight > humanArray.weight) {
+						let weight = dinosaurs.species + ' is ' + (dinosaurs.weight - humanArray.weight) + ' ibs heavier than ' + humanArray.name;
 						return weight;
-					},
-					compareHeight() {
-						let height = dinosarus.species + ' is ' + (dinosarus.height - humanArray.height) + ' inches taller than ' + humanArray.name;
+					}
+				        else if (dinosaurs.weight < humanArray.weight) {
+					        let weight = dinosaurs.species + ' is ' + (humanArray.weight - dinosaurs.weight) + ' ibs lighter than ' + humanArray.name;
+						return weight;
+					} 
+					else {
+					        return `${dinosaurs.species} and ${humanArray.name} have the same weight.`;
+					}
+				},
+				compareHeight() {
+					if (dinosaurs.height > humanArray.height) {
+						let height = dinosaurs.species + ' is ' + (dinosaurs.height - humanArray.height) + ' inches taller than ' + humanArray.name;
 						return height;
-					},
-					compareDiet() {
-						let diet = dinosarus.species + ' is ' + dinosarus.diet + '. ' + humanArray.name + ' is ' + humanArray.diet + '.';
+					}
+				        else if (dinosaurs.height < humanArray.height) {
+						let height = dinosaurs.species + ' is ' + (humanArray.height - dinosaurs.height) + ' inches smaller than ' + humanArray.name;
+						return height;
+					}
+					else {
+					        return `${dinosaurs.species} and ${humanArray.name} have the same height.`;
+					}
+				},		
+				compareDiet() {
+					if (dinosaurs.diet === humanArray.diet) {
+						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
 						return diet;
-					},
+					}
+		                        else (dinosaurs.diet !=== humanArray.diet) {
+						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the different diet. ';
+						return diet;
+					} 
+						
+				},
 					origin() {
-						let origin = dinosarus.species + ' lived in ' + dinosarus.where;
+						let origin = dinosaurs.species + ' lived in ' + dinosaurs.where;
 						return origin;
 					},
 					birthTime() {
-						let birthTime = dinosarus.species + ' lived in the period of ' + dinosarus.when;
+						let birthTime = dinosaurs.species + ' lived in the period of ' + dinosaurs.when;
 						return birthTime;
 					}
 			};
