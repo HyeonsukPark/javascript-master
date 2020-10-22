@@ -51,7 +51,7 @@ function humanData() {
 let dinoArray = [];
 
 function newFactory() {
-	dinosaurs.forEach((dinosarus) => {
+	dinosaurs.forEach((dinosaurs) => {
 		dinoArray.push(dinosaurs.species);
 	});
 	let humanName = humanArray.name;
