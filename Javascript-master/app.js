@@ -126,7 +126,7 @@ function displayFact() {
 				},		
 				 
 				compareDiet() {
-					if (dinosaurs.diet === humanArray.diet) {
+					if (dinosaurs.diet && humanArray.diet.toLowerCase()) {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
 						return diet;
 					} 
