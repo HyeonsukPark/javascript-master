@@ -130,10 +130,7 @@ function displayFact() {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
 						return diet;
 					}
-		                        else {
-						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the different diet. ';
-						return diet;
-					} 
+		                        return `${dinosaurs.species} and ${humanArray.name} have the different diet.`;
 						
 				},
 					origin() {
