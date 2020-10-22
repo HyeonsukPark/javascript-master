@@ -163,7 +163,7 @@ function displayFact() {
 					randomFact.innerHTML = functionFactory.birthTime();
 					break;
 				case 5:
-					randomFact.innerHTML = dinosarus.fact;
+					randomFact.innerHTML = dinosaurs.fact;
 			}
 		}
 	});
