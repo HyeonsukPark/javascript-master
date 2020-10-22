@@ -126,11 +126,11 @@ function displayFact() {
 					}
 				},		
 				compareDiet() {
-					if (dinosaurs.diet === humanArray.diet) {
+					if (dinosaurs.diet == humanArray.diet) {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
 						return diet;
 					}
-		                        else (dinosaurs.diet !=== humanArray.diet) {
+		                        else (dinosaurs.diet !== humanArray.diet) {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the different diet. ';
 						return diet;
 					} 
