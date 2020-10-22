@@ -103,28 +103,28 @@ function displayFact() {
 				        if (dinosaurs.weight > humanArray.weight) {
 						let weight = dinosaurs.species + ' is ' + (dinosaurs.weight - humanArray.weight) + ' ibs heavier than ' + humanArray.name;
 						return weight;
+						
 					}
-				        else if (dinosaurs.weight < humanArray.weight) {
+				        if (dinosaurs.weight < humanArray.weight) {
 					        let weight = dinosaurs.species + ' is ' + (humanArray.weight - dinosaurs.weight) + ' ibs lighter than ' + humanArray.name;
 						return weight;
 					} 
-					else {
-					        return `${dinosaurs.species} and ${humanArray.name} have the same weight.`;
-					}
+					return `${dinosarus.species} and ${humanArray.name} have the same weight.`;
 				},
+				
 				compareHeight() {
 					if (dinosaurs.height > humanArray.height) {
 						let height = dinosaurs.species + ' is ' + (dinosaurs.height - humanArray.height) + ' inches taller than ' + humanArray.name;
 						return height;
 					}
-				        else if (dinosaurs.height < humanArray.height) {
+				        if (dinosaurs.height < humanArray.height) {
 						let height = dinosaurs.species + ' is ' + (humanArray.height - dinosaurs.height) + ' inches smaller than ' + humanArray.name;
 						return height;
 					}
-					else {
-					        return `${dinosaurs.species} and ${humanArray.name} have the same height.`;
-					}
+					return `${dinosaurs.species} and ${humanArray.name} have the same height.`;
+
 				},		
+				 
 				compareDiet() {
 					if (dinosaurs.diet && humanArray.diet) {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
