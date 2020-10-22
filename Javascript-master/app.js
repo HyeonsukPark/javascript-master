@@ -131,7 +131,7 @@ function displayFact() {
 						return diet;
 					} 
 					else {
-		                        return `${dinosaurs.species} and ${humanArray.name} have the different diet.`;
+		                               return `${dinosaurs.species} and ${humanArray.name} have the different diet.`;
 					}	
 				},
 					origin() {
