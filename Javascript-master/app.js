@@ -33,7 +33,7 @@ class Humans {
 		this.inches = document.getElementById('inches').value;
 		this.height = (this.feet * 12) + this.inches;
 		this.weight = document.getElementById('weight').value;
-		this.diet = document.getElementById('diet').value;
+		this.diet = document.getElementById('diet').value.toLowerCase();
 		return this;
 	}
 }
@@ -126,8 +126,8 @@ function displayFact() {
 				},		
 				 
 				compareDiet() {
-					if (dinosaurs.diet && humanArray.diet.toLowerCase()) {
-						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
+					if (dinosaurs.diet && humanArray.diet) {
+						let diet = dinosaurs.species + ' and ' + humanArray.name + ' has the same diet. ';
 						return diet;
 					} 
 					else {
