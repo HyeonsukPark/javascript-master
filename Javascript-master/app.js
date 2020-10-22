@@ -93,7 +93,7 @@ function displayData() {
 
 // Create random facts and methods
 function displayFact() {
-	dinosaurs.forEach((dinosarus) => {
+	dinosaurs.forEach((dinosaurs) => {
 		let randomFact = document.querySelector(".randomFact" + dinosaurs.species.replaceAll(" ", ""));
 		if(randomFact !== null) {
 			
@@ -129,9 +129,10 @@ function displayFact() {
 					if (dinosaurs.diet && humanArray.diet) {
 						let diet = dinosaurs.species + ' and ' +humanArray.name + ' has the same diet. ';
 						return diet;
-					}
+					} 
+					else {
 		                        return `${dinosaurs.species} and ${humanArray.name} have the different diet.`;
-						
+					}	
 				},
 					origin() {
 						let origin = dinosaurs.species + ' lived in ' + dinosaurs.where;
